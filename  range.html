@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		function range(start, end){
+			var numbers = [];
+			numbers[0] = start;
+
+			for (var i = 0; start <= end; start++) {
+				numbers[i] = numbers.push(start);
+			}
+
+			numbers.shift();
+
+			return numbers;
+		}
+
+		function sum(array) {
+			var total;
+
+			for (var i = 0; i < array.length; i++) {
+				total += array[i];
+			}
+
+			return total;
+		}
+		
+		console.log(sum(range(5, 10)));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

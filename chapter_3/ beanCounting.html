@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function countBs(stg) {
+			let count = 0;
+
+			for (var i = 0; i <= stg.length; i++) {
+				if (stg[i] == 'B') {
+					count ++;
+				}
+			}
+
+			return count;
+		}
+
+		function countChar(stg, value) {
+			let count = 0;
+
+			for (var i = 0; i <= stg.length; i++) {
+				if (stg[i] == value) {
+					count ++;
+				}
+			}
+			
+			return count;
+		}
+
+		console.log(countBs("BoBoBoBoBoB is bob"));
+		console.log(countChar("Hello World of Javascript", "J"));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

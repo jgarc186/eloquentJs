@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var num = 1;
+
+		while (num <= 100) {
+			if (Number.isInteger(num / 3) && Number.isInteger(num /5)) {
+				console.log('FizzBuzz');
+			} else if (Number.isInteger(num / 3)) {
+				console.log('Fizz');
+			} else if (Number.isInteger(num / 5)) {
+				console.log('Buzz');
+			} else {
+				console.log(num);
+			}
+			num ++;
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function arrayToList(first, second, third) {
+			var list = {
+				value: first,
+				rest: {
+					value: second,
+					rest: {
+						value:third,
+						rest: null
+					}
+				}
+			}
+			return list;
+		}
+
+		function listToArray(array) {
+			let value = [];
+			for (var i = 0; i < array.length; i++) {
+				value.push(array[i]);
+			}
+			return value;
+		}
+
+		function prepend(element, list) {
+			let newList = {
+				
+			}
+		}
+
+		let list = arrayToList(1, 2, 3);
+
+		console.log(list.rest.value);
+		console.log(listToArray([
+				list.value, 
+				list.rest.value, 
+				list.rest.rest.value
+			]));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
