@@ -88,3 +88,35 @@ function randomRobot(state) {
         direction: randomPick(roadGraph[state.place])
     };
 }
+
+VillageState.random = function(parcelCount = 5) {
+    let parcels = [];
+    for (var i = 0; i < parcelCount; i++) {
+        let address = randomPick(Object.keys(roadGraph));
+        let place;
+        do {
+            place = randomPick(Object.keys(roadGraph));
+        } while (place == address);
+        parcels.push({place, address});
+    }
+    return new VillageState("post office", parcels);
+};
+
+runRobot(Village.rabndom(), randomRobot);
+
+const mailRoute = [
+    "Alice's House", "Cabin", "Alice's House", "Bob's House",
+    "Rown Hall", "Daria's House", "Ernie's House",
+    "Grete's House", "Shop", "Grete's House", "Farm",
+    "Marketplace", "POst Office"
+];
+
+function routeRobot(state, memory) {
+    if (memory.length == 0) {
+        memory = mailRoute;
+    }
+    return {
+        direction: memory[0],
+        memory: memory.slice(1)
+    };
+}
