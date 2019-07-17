@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Focus Events</title>
+</head>
+<body>
+
+	<form>
+		<div>
+			<label>Name:</label>
+			<input type="text" data-help="Your full name">
+		</div>
+		<br>
+		<div>
+			<label>Age:</label>
+			<input type="text" data-help="Age in years">			
+		</div>
+		<br>
+		<div>
+			<label id="help"></label>			
+		</div>
+	</form>
+
+	<script type="text/javascript">
+		let help = document.querySelector("#help");
+		let fields = document.querySelectorAll("input");
+
+		for (let field of Array.from(fields)) {
+			field.addEventListener('focus', event => {
+				let text = event.target.getAttribute("data-help");
+				help.textContent = text;
+			});
+
+			field.addEventListener("blur", event => {
+				help.textContent = "";
+			});		
+		}	
+	</script>
+	
+</body>
+</html>

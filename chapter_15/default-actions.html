@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Default Actions</title>
+</head>
+<body>
+
+	<a href="https://developer.mozilla.org/">MDN</a>
+
+	<script type="text/javascript">
+		let link = document.querySelector("a");
+
+		link.addEventListener("click", event => {
+			alert("Nope.");
+			event.preventDefault();
+		});
+	</script>
+
+</body>
+</html>

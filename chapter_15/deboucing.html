@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deboucing</title>
+</head>
+<body>
+
+	<textarea>Type something here...</textarea>
+
+	<script type="text/javascript">
+		let textarea = document.querySelector("textarea");
+		let timeout;
+
+		textarea.addEventListener("input", () => {
+			clearTimeout(timeout);
+			timeout = setTimeout(() => {
+				console.log("Type!"), 500
+			});
+		});
+	</script>
+
+</body>
+</html>
