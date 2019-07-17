@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ballon</title>
+</head>
+<body>
+	<p>🎈</p>
+
+	<script type="text/javascript">
+		let baloon = document.querySelector("p");
+		let size;
+
+		function setSize(newSize) {
+			size = newSize;
+			baloon.style.fontSize = size + "px";
+		}
+
+		setSize(25);
+
+		function ajustSize(event) {
+			if (event.key == "ArrowUp") {
+				if (size >= 100) {
+					baloon.textContent = "💥";
+					document.body.removeEventListener("keyup", ajustSize);
+				} else {
+					setSize(size * 1.1);
+					event.stopPropagation();
+				}
+			} else if (event.key == "ArrowDown") {
+				setSize(size * 0.9);
+			}
+		}
+
+		document.body.addEventListener("keyup", ajustSize);
+	</script>
+</body>
+</html>
