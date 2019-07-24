@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+	<form action="example/submit.html">
+		Value: 
+		<input type="text" name="value">
+		<button type="submit">Save</button>
+	</form>
+
+	<script type="text/javascript">
+		let form = document.querySelector("form");
+
+		form.addEventListener("submit", event => {
+			console.log("saving vallue", form.elements.value.value);
+				event.preventDefault();
+		});
+	</script>
+</body>
+</html>

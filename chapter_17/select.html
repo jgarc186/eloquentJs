@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select</title>
+</head>
+<body>
+
+	<select multiple>
+		<option value="1">One</option>
+		<option value="2">Two</option>
+		<option value="3">Three</option>
+		<option value="4">Four</option>
+		<option value="5">Five</option>
+	</select>
+
+	<label>
+		Counter:
+		<span id="count">0</span>		
+	</label>
+
+	<script type="text/javascript">
+		let select = document.querySelector("select");
+		let counter = document.querySelector("#count");
+
+		select.addEventListener("change", () => {
+			let num = 0;
+			for (let option of Array.from(select.options)) {
+				if (option.selected) {
+					num += Number(option.value);					
+				}
+			}
+			counter.textContent = num;
+		});
+	</script>
+
+</body>
+</html>

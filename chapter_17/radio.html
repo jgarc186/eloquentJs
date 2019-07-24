@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Raio</title>
+</head>
+<body>
+
+	<label>
+		Make this page purple
+		<input type="checkbox" id="purple">
+	</label>
+
+	<script type="text/javascript">
+		let checkbox = document.querySelector("#purple");
+
+		checkbox.addEventListener("change", () => {
+			document.body.style.background = checkbox.checked ? "mediumpurple" : "";
+		});
+	</script>
+
+</body>
+</html>
