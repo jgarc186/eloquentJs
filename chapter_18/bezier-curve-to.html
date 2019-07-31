@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bezier Curve To</title>
+</head>
+<body>
+	<canvas></canvas>
+	<script type="text/javascript">
+		let cx = document.querySelector("canvas").getContext("2d");
+		cx.beginPath();
+		cx.moveTo(10, 98);
+		cx.bezierCurveTo(10, 10, 90, 10, 50, 90);
+		cx.lineTo(90, 10);
+		cx.lineTo(10, 10);
+		cx.closePath();
+		cx.stroke();
+	</script>
+</body>
+</html>
