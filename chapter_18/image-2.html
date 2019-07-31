@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image 2</title>
+</head>
+<body>
+	
+	<canvas width="500" height="500"></canvas>
+
+	<script type="text/javascript">
+		let cx = document.querySelector("canvas").getContext("2d");
+		let img = document.createElement("img");
+		img.src = "img/player.png";
+		let spriteW = 24, spriteH = 30;
+		img.addEventListener("load", () => {
+			let cycle = 0;
+			setInterval(() => {
+				cx.clearRect(0, 0, spriteW, spriteH);
+				cx.drawImage(img, cycle * spriteW, 0, spriteW, spriteH, 0, 0, spriteW, spriteH);
+				cycle = (cycle + 1) % 8;
+			}, 120);
+		});
+	</script>
+	
+</body>
+</html>	

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Images</title>
+</head>
+<body>
+	<canvas></canvas>
+	<script type="text/javascript">
+		let cx = document.querySelector("canvas").getContext("2d");
+		let img = document.createElement("img");
+		img.src = "img/hat.png";
+		img.addEventListener("load", () => {
+			for (let x = 10; x < 200; x += 30) {
+				cx.drawImage(img, x, 10);
+			}
+		});
+	</script>
+</body>
+</html>
