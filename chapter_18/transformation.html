@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transformation</title>
+</head>
+<body>
+	<canvas></canvas>
+	<script type="text/javascript">
+		let cx = document.querySelector("canvas").getContext("2d");
+		cx.scale(3, .5);
+		cx.beginPath();
+		cx.arc(50, 50, 40, 0, 7);
+		cx.lineWidth = 3;
+		cx.stroke();
+	</script>
+</body>
+</html>
