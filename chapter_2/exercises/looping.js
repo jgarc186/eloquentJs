@@ -1,6 +1,6 @@
-let value = "#";
+let triangle = "#";
 
-while (value.length <= 7)  {
-	console.log(value);
-	value += "#";
-} 
+for (var i = 0; i <= 6; i++) {
+	console.log(triangle);
+	triangle += "#";
+}
