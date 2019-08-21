@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e80e414-f7a9-49ce-aa97-28d60c341be1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_2/ exercises/ fizzbuzz.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_2/ exercises/chessboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_2/ exercises/triangle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_2/exercises/chess.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_2/exercises/fizz.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_2/exercises/looping.js" beforeDir="false" afterPath="$PROJECT_DIR$/chapter_2/exercises/looping.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_3/ minum.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_4/exercies/deep-comparison.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_4/exercies/list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_4/exercies/reverse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_4/exercies/sum-range.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_5/ arrayology.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_5/ filteringArrays.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_5/ highOrderFunctions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_5/ json.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_5/ mathObject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_5/ range.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_5/abstract.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_5/correlation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_5/quotes.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="8e80e414-f7a9-49ce-aa97-28d60c341be1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,19 +12,6 @@
     <execution>
       <executable />
     </execution>
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter_5/abstractingRepetition.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,6 +40,8 @@
         <option value="$PROJECT_DIR$/chapter_5/exercises/repeat.js" />
         <option value="$PROJECT_DIR$/chapter_5/exercises/flat.js" />
         <option value="$PROJECT_DIR$/chapter_5/abstractingRepetition.js" />
+        <option value="$PROJECT_DIR$/chapter_5/higher-order-functions.js" />
+        <option value="$PROJECT_DIR$/chapter_5/script-data-set.js" />
       </list>
     </option>
   </component>
@@ -143,16 +110,15 @@
       <workItem from="1565806553288" duration="291000" />
       <workItem from="1565811071983" duration="4376000" />
       <workItem from="1566220806965" duration="7698000" />
-      <workItem from="1566332966678" duration="592000" />
+      <workItem from="1566332966678" duration="2458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19048000" />
+    <option name="totallyTimeSpent" value="20914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -272,8 +238,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chapter_5/abstractingRepetition.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        <state relative-caret-position="300">
+          <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter_5/higher-order-functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="29" selection-start-line="29" selection-end-line="29" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter_5/script-data-set.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="1128" lean-forward="true" selection-start-line="1128" selection-end-line="1128" />
         </state>
       </provider>
     </entry>
