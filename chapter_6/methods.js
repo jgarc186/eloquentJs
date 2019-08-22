@@ -1,29 +1,36 @@
-let rabbit = {};
-
-rabbit.speak = function(line) {
-	console.log(`The rabbit says '${line}'`);
+let rabit = {};
+rabit.speak = function(line) {
+  console.log("The rabbit says " + line);
 };
 
-rabbit.speak("I'm a live.");
-// -> The rabbit says 'I'm alive.'
+rabit.speak("Hello World!");
 
-function speak(line) {
-	console.log(`The ${this.type} rabbit says '${line}'`);
+function speak (line) {
+    console.log(`The ${this.type} rabbit says ${line}`);
 }
+
 let whiteRabbit = {
-	type: "white",
-	speak
+    type: "white",
+    speak
+};
+let hungryRabbit = {
+    type: "Hungry",
+    speak
 };
 
-let hungryRabbit = {
-	type: "hungry",
-	speak
+whiteRabbit.speak("Nice to meet you!");
+hungryRabbit.speak("I'm starving");
+
+speak.call(hungryRabbit, "I am burp!");
+
+function normalize() {
+    console.log(this.coords.map(n => n / this.length));
 }
-
-whiteRabbit.speak("Oh my ears and whiskers, how late it's getting.");
-// --> `The white rabbit says 'Oh my ears and whiskers, how late it's getting.'
-hungryRabbit.speak("I could use a carrot right now.");
-// --> `The hungry rabbit says 'I could use a carrot right now.'`
-
-speak.call(whiteRabbit, "Burp!");
-// --> The white rabbit says 'Burp!'
+normalize.call({
+    coords: [
+        0,
+        2,
+        3
+    ],
+    length: 5
+});
