@@ -1112,7 +1112,7 @@ let scripts = [
         link: "https://en.wikipedia.org/wiki/Mongolian_writing_systems#Horizontal_square_script"
     }
 ];
-
+//
 // function filter(array, test) {
 //     let passed = [];
 //     for (let element of array) {
@@ -1122,19 +1122,39 @@ let scripts = [
 //     }
 //     return passed;
 // }
-
+//
 // console.log(filter(scripts, script => script.living));
+//
+// console.log(scripts.filter(script => script.living));
+//
+// function map(array, transform) {
+//     let mapped = [];
+//     for (let element of array) {
+//         mapped.push(transform(element));
+//     }
+//     return mapped;
+// }
+//
+// let rtlScripts = scripts.filter(script => script.direction === "ltr");
+// console.log(map(rtlScripts, script => script.name));
+// rtlScripts.map(script => script.name);
+//
+// function reduce(array, combine, start) {
+//     let current = start;
+//     for (let element of array) {
+//         current = combine(current, element);
+//     }
+//     return current;
+// }
+//
+// console.log(reduce([1, 2, 3, 4], (a, b) => a + b, 0));
+//
+// function characterCount(script) {
+//     return script.ranges.reduce((count, [from, to]) => {
+//         return count + (to - from);
+//     }, 0);
+// }
+// scripts.reduce((a, b) => {
+//     return characterCount(a) < characterCount(b) ? b : a;
+// });
 
-console.log(scripts.filter(script => script.living));
-
-function map(array, transform) {
-    let mapped = [];
-    for (let element of array) {
-        mapped.push(transform(element));
-    }
-    return mapped;
-}
-
-let rtlScripts = scripts.filter(script => script.direction === "ltr");
-console.log(map(rtlScripts, script => script.name));
-rtlScripts.map(script => script.name);
