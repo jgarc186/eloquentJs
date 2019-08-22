@@ -1,10 +1,8 @@
-let labels = [];
-let repeat = (number, action) => {
-    for (let i = 0; i <= number; i++) {
-        action(i);
+
+function loop(value, test, update, body) {
+    for (let start = value; test(start); start = update(start)) {
+        body(start);
     }
-};
+}
 
-repeat(5, i => labels.push(`Unit ${i + 1}`));
-
-labels;
+loop(3, n => n > 0, n => n - 1, console.log);
